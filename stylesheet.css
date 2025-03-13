@@ -1,16 +1,60 @@
+/* Header Styling */
 header {
-  background-color: #333;
-  padding: 15px;
-  text-align: center;
+  background-color: darkred; /* Solid background color */
+  padding: 15px 0; /* Vertical padding */
+  width: 100%; /* Ensure the header spans full width */
+  text-align: center; /* Center-align text */
+  box-sizing: border-box; /* Include padding in the width */
+  position: relative; /* Allows positioning of children like nav */
+}
+body {
+  background-color: #faf0e6; /* Light beige background */
+  color: #333; /* Dark text color */
+  margin: 0;
+  padding-top: 80px; /* Prevent header from covering content */
+  font-family: Arial, sans-serif;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
+/* Navigation Bar */
+#menubar {
+  display: flex;
+  justify-content: center; /* Center the navigation horizontally */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.header-image {
+  display: block;
+  width: 40%; /* Adjust width (try 50%, 60%, etc.) */
+  max-width: 600px; /* Set a max width */
+  height: auto; /* Maintain aspect ratio */
+  float: left;
+  margin: 20px auto; /* Center the image with top/bottom spacing */
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center !important;
+}
+
+p {
+  text-align: center !important;
+  margin-right: 20px !important;
+}
+
+.event-description {
+  text-align: left; /* Optional: Center the text */
+  margin-top: 20px; /* Add spacing between the image and paragraph */
+  clear: left; /* Clears the float and ensures the paragraph is below the image */
+  float: left;
+  color: darkorange;
 }
