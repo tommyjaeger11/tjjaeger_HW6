@@ -106,6 +106,8 @@ table {
   border-collapse: collapse; /* Remove double borders */
   margin: 20px auto; /* Center the table and add some margin */
   margin-top: 80px; /* Add extra space between the table and the previous area */
+  border: 1px solid black; /* Adds a border of width 1 with a solid black style */
+  border-collapse: collapse; /* Ensures borders don't double up */
 }
 
 th,
@@ -114,6 +116,7 @@ td {
   padding: 10px; /* Add padding inside the cells */
   text-align: left; /* Align text to the left */
   vertical-align: top; /* Align text to the top */
+  border: 1px solid black; /* Applies the border to individual cells and headers */
 }
 
 th {
