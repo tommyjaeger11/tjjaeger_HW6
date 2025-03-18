@@ -2,6 +2,7 @@ header {
   background-color: #333;
   padding: 15px;
   text-align: center;
+  float: none;
 }
 
 nav a {
@@ -12,5 +13,131 @@ nav a {
 }
 
 nav a:hover {
+  text-decoration: underline;
+}
+
+/*this is everything after the navigation pane*/
+.top-header {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.small-image {
+  text-align: center; /* Centers the caption */
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.small-image img {
+  width: 300px; /* Adjusted size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.small-image figcaption {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px; /* Adds space between image and caption */
+  text-align: center;
+  font-style: italic; /* Italicizes the caption */
+}
+
+/* Add the first content styling*/
+.content {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto; /* Centers content */
+}
+
+h2 {
+  font-size: 27px; /* Make headers bigger */
+  color: #333;
+}
+
+p {
+  font-size: 20px; /* Increase paragraph text size */
+  line-height: 1.2; /* Improve readability */
+  color: #444;
+}
+
+.family-image img {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  font-size: 27px; /* Make headers bigger */
+  color: #333;
+}
+.content-2 {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 20px; /* Add some space before the bullets */
+}
+
+.content-2 li::before {
+  content: "— "; /* Add a dash before each list item */
+  color: #4a90e2; /* Customize the color */
+  font-size: 20px; /* Adjust the size if needed */
+  text-align: center;
+}
+
+.content-2 p {
+  text-align: center;
+}
+
+.content-2 ul {
+  list-style-position: inside;
+  margin: 0 auto;
+  display: table;
+  text-align: left;
+}
+.content-2 li {
+  text-align: left;
+}
+
+table {
+  width: 100%; /* Make the table take full width of the container */
+  border-collapse: collapse; /* Remove double borders */
+  margin: 20px auto; /* Center the table and add some margin */
+  margin-top: 80px; /* Add extra space between the table and the previous area */
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* Add a light gray border */
+  padding: 10px; /* Add padding inside the cells */
+  text-align: left; /* Align text to the left */
+  vertical-align: top; /* Align text to the top */
+}
+
+th {
+  background-color: #f4f4f4; /* Light background for headers */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the headers */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Add a subtle zebra striping */
+}
+
+tr:hover {
+  background-color: #e0f7fa; /* Highlight row on hover */
+}
+
+td {
+  text-align: left; /* Default alignment for data cells */
+}
+
+caption {
+  caption-side: top; /* Position caption above the table */
+  font-size: 25px; /* Adjust font size */
+  font-weight: bold; /* Make caption bold */
+  margin-bottom: 10px; /* Add spacing below caption */
   text-decoration: underline;
 }
